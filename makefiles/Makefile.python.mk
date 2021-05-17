@@ -1064,7 +1064,7 @@ publish_python_pimpl: package_python
 
 .PHONY: install_python # Install Python OR-Tools on the host system
 install_python: pypi_archive
-	cd "$(PYPI_ARCHIVE_TEMP_DIR)$Sortools" && "$(PYTHON_EXECUTABLE)" setup.py install --user
+	cd "$(PYPI_ARCHIVE_TEMP_DIR)$Sortools" && "$(PYTHON_EXECUTABLE)" setup.py install
 
 .PHONY: uninstall_python # Uninstall Python OR-Tools from the host system
 uninstall_python:
